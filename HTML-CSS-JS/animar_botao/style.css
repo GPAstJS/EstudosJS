@@ -1,0 +1,27 @@
+body {
+    height: 100vh
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 70px;
+    width: 150px;
+    font: 10rem;
+    animation: btn 0.5s linear infinite;
+}
+
+@keyframes btn {
+    from {
+        
+    }
+} 
+
