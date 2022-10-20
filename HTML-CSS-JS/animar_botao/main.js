@@ -16,6 +16,3 @@ function rodarBotao(param) {
     let total = ano * param / 87.97
     return Math.round(total * 10000)/10000 + 's'
 }
-
-$('#btn').css('animation-duration',
-rodarBotao(87.97))

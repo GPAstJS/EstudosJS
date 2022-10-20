@@ -4,9 +4,12 @@ body {
 
 #container {
     height: 100vh;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+
+    /* justify-content: center;
+    align-items: center; */
+
 }
 
 #btn {
@@ -16,12 +19,16 @@ body {
     height: 70px;
     width: 150px;
     font: 10rem;
-    animation: btn 0.5s linear infinite;
+    animation: btn 3s alternate infinite;
+    transition: 0.5s;
 }
 
 @keyframes btn {
-    from {
-        
+    0% {
+        transform: translateX(10vw);
+    } 100% {
+        transform: translateX(85vw);
     }
-} 
+}
+
 
