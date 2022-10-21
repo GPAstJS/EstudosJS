@@ -19,15 +19,15 @@ body {
     height: 70px;
     width: 150px;
     font: 10rem;
-    animation: btn 3s alternate infinite;
+    animation: btn 3s alternate linear infinite;
     transition: 0.5s;
 }
 
 @keyframes btn {
     0% {
-        transform: translateX(10vw);
+        transform: translateX(0vw);
     } 100% {
-        transform: translateX(85vw);
+        transform: translateX(100vw);
     }
 }
 
