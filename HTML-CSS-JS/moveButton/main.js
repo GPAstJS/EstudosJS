@@ -24,7 +24,7 @@ window.addEventListener('keydown', (e) => {
         case "ArrowRight":
             elemento.style.left = parseInt(elemento.style.left) + movimentar +  'px';
             break;
-        default: console.log('Os botões que funcionam são as SETAS!!')
+        default:
     }
 })
 
