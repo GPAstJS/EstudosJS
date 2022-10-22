@@ -1,10 +1,5 @@
 const button = document.getElementById('btn')
 
-
-function randomizar(number) {
-    return Math.floor(Math.random() * (number+1))
-}
-
 button.onclick = function() {
     let randCor = 'rgb(' + randomizar(255) + ',' + randomizar(255) + ',' + randomizar(255) + ')';
     button.style.borderColor = randCor

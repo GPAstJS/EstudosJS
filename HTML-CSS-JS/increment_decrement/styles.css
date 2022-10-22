@@ -1,0 +1,36 @@
+body {
+    height: 100vh
+}
+
+label {
+    font-style: italic;
+}
+#container {
+    font-style: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+button {
+    justify-content: center;
+    flex-direction: row;
+    margin: 2px;
+}
+#btn-incrementar {
+    font-style: italic;
+    border: 2px solid rgb(53, 163, 62);
+    border-radius: 10px;
+    background-color: rgb(53, 163, 62);
+}
+
+
+#btn-decrementar {
+    font-style: italic;
+    border: 2px solid rgb(179, 32, 32);
+    border-radius: 10px;
+    background-color: rgb(179, 32, 32);
+}
