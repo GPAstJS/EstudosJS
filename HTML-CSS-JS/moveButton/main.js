@@ -13,18 +13,18 @@ window.addEventListener("load", (e) => {
 window.addEventListener('keydown', (e) => {
     switch(e.key) {
         case "ArrowUp":
-            elemento.style.top = parseInt(elemento.style.top) - movimentar + 'px';
+            elemento.style.top = parseInt(elemento.style.top) - movimentar + movimentar + 'px';
             break;
         case "ArrowDown":
-            elemento.style.top = parseInt(elemento.style.top) + movimentar + 'px';
+            elemento.style.top = parseInt(elemento.style.top) + movimentar +movimentar+ 'px';
             break;
         case "ArrowLeft":
-            elemento.style.left = parseInt(elemento.style.left) - movimentar + 'px'
+            elemento.style.left = parseInt(elemento.style.left) - movimentar + movimentar + 'px'
             break;
         case "ArrowRight":
-            elemento.style.left = parseInt(elemento.style.left) + movimentar + 'px';
+            elemento.style.left = parseInt(elemento.style.left) + movimentar + movimentar+ 'px';
             break;
-        default: alert('Botao direito fdp')
+        default: console.log('Os botões que funcionam são as SETAS!!')
     }
 })
 
