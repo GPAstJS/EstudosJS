@@ -10,18 +10,27 @@
 
   <body>
     <div class="container">
-      <div class="formulario">
-        <form>
-          <div class="alinhar-comeco" display='flex' align-items='flex-start'>
+      <form>
+        <div class="alinhar-comeco" display="flex" align-items="flex-start">
+          <div>
             <label>Nome</label>
-            <input type="text" id="name"><br>
             <label>Idade</label>
-            <input type="number" id="age">
-            
+            <label for="">Profissão</label>
+            <label>Email</label>
+            <label>Senha</label>
           </div>
-        </form>
-      </div>
+          <div>
+            <input type="text" id="name" placeholder="teste" />
+            <input type="number" id="age" maxlength="3" min="18" max="100"/>
+            <input type="text" />
+            <input type="email" id="email" />
+            <input type="password" id="password" minlength="3" maxlength="15" />
+          </div>
+        </div>
+        <button id="enviar">ENVIAR</button>
+      </form>
     </div>
+    <div id="content"></div>
   </body>
   <script src="main.js"></script>
 </html>
