@@ -9,15 +9,22 @@ form {
 }
 
 input {
+    height: 30px;
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 6px;
     margin: 5px;
-    text-align: center;
+    text-align: left;
 }
 
 button {
+    height: 25px;
     border-radius: 5px;
-    background-color: green;
+    border: 0px solid;
+    background-image: linear-gradient(to right, red, blue);
+}
+
+label {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
