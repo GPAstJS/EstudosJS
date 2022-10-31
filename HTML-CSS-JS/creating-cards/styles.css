@@ -1,3 +1,7 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
 body {
     height: 100vh;
     background: lightgray   ;
@@ -6,7 +10,6 @@ body {
 .container {
     display: flex;
     height: 100vh;
-    
     align-items: center;
     justify-content: space-evenly;
 }
@@ -14,17 +17,22 @@ body {
 .card {
     display: flex;
     box-shadow: black;
-    height: 450px;
-    width: 500px;
+    height: 350px;
+    width: 300px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     background-color: white;
     flex-direction: column;
 }
 
+#cardMeio {
+    margin-top: 50px;
+    height: 400px;
+}
+
 #thumbnail {
     display: flex;
-    height: 250px;
+    height: 150px;
     background-color: dimgray;
     justify-content: center;
     align-items: center;
@@ -46,9 +54,11 @@ h1 {
 }
 
 p {
+
     margin: 15px;
     font-size: 16px;
     text-align: start;
+     font-family: 'Roboto', sans-serif;
 }
 
 .tempo {
