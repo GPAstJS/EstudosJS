@@ -1,0 +1,49 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15pt;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+  padding-right: 450px;
+  padding-left: 490px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23pt;
+}
+
+p {
+    opacity: 0.8;
+}
+
+button {
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border: 2px solid gray;
+}
+
+#primary {
+    color: white;
+    background-color: #0D6EFD;
+    width: 175px;
+    border: none;
+}
