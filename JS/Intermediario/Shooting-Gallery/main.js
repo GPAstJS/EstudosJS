@@ -1,6 +1,12 @@
+let circle = document.getElementById('circle')
 
+function distanciaEntre() {
+    const diferenca =  Math.sqrt((circle.style.left - event.clientX) ** 2 + (circle.style.top - event.clientY) ** 2)
+    console.log(`Diferença entre raio e mouse: ${diferenca}`)   
 
-circle.addEventListener("click", (event) => {
+}
+
+window.addEventListener("click", (event) => {
     let circle = document.getElementById('circle')
 
     circle.style.top = 0
@@ -16,6 +22,3 @@ circle.addEventListener("click", (event) => {
 });
 
 
-function distanciaEntre() {
-    console.log(Math.sqrt((circle.style.left - event.clientX) ** 2 + (circle.style.top - event.clientY) **   2))
-}
