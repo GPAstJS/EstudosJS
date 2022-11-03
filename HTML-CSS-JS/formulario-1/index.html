@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario mais complexo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1>Contact Us</h1>
+        <form action="">
+          <div class="name-box">
+            <p class="p-tag">FULL NAME *</p>
+            <input
+              type="text"
+              class="input-tag"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="email-phone-box">
+            <div class="email-box">
+              <p class="p-tag">EMAIL*</p>
+              <input
+                type="email"
+                class="input-tag"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="phone-box">
+              <p class="p-tag">PHONE</p>
+              <input
+                type="text"
+                class="input-tag"
+                placeholder="Enter Your Number"
+              />
+            </div>
+          </div>
+          <div class="services-box">
+            <p class="p-tag">NEEDED SERVICES *</p>
+            <select disabled style="font-size: 10.5pt; color: black; margin-left: -2.5px;" name="select-tag" class="select-tag" id="select-tag">
+                <option hidden value="1">Please chooses</option>
+            </select>
+          </div>
+          <div class="message-box">
+            <p class="p-tag">MESSAGE</p>
+            <input type="text" class="input-tag" placeholder="Your Message Here">
+          </div>
+          <div class="action">
+            <button>Submit &rarr;</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #E6E6E6;
+}
+
+h1 {
+  text-align: center;
+}
+.container {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name-box {
+  width: 500px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding-left: 10px;
+  padding: 10px;
+}
+
+.email-phone-box {
+  justify-content: space-between;
+  padding-top: 10px;
+  display: flex;
+  flex: row;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.email-box {
+  width: 230px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding-left: 10px;
+  padding: 10px;
+}
+
+.phone-box {
+  width: 230px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding-left: 10px;
+  padding: 10px;
+}
+
+.services-box {
+  width: 500px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding-left: 10px;
+  padding: 10px;
+  margin-bottom: 20px;;
+}
+
+.message-box {
+  width: 500px;
+  height: 100px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  background-color: #ffF;
+  padding: 10px;
+}
+
+button {
+  border: 1px solid #333333;
+  color: white;
+  background: #333333;
+  border-radius: 30px;
+  margin-top: 20px;
+  height: 40px;
+  width: 100%;
+}
+
+.input-tag {
+  width: 450px;
+  background-color: transparent;
+  border: transparent;
+  width: 200px;
+  height: 10px;
+  padding-bottom: 7px;
+  margin-bottom: 3px;
+}
+
+.p-tag {
+
+  margin-top: 2px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+  font-size: 10px;
+}
+
+.input-tag:focus {
+  outline: none;
+}
+
+.input-tag:hover {
+  outline: none;
+}
+
+.input-tag:active {
+  outline: none;
+}
+
+#select-tag {
+  width: 100px;
+  width: 100%;
+  height: 30px;
+  padding-bottom: 7px;
+  margin-bottom: 3px;
+  border: none;
+  background-color: transparent;
+}
+
+option {
+  background-color: transparent;
+  border: none;
+}
+
+
+#select-tag:hover {
+  border: none;
+  background-color: transparent
+}
