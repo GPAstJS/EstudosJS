@@ -11,5 +11,7 @@ body {
     width: 75px;
     border-radius: 50px;
     border: none;
-    background: black;
+    background: gold;
+    transition: 1s
+
 }
