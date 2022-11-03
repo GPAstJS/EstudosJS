@@ -1,8 +1,6 @@
 body {
     display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
 }
 
 #circle {
@@ -12,6 +10,5 @@ body {
     border-radius: 50px;
     border: none;
     background: gold;
-    transition: 1s
-
+    transition: 1s;
 }

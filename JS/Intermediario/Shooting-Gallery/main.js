@@ -1,24 +1,30 @@
-let circle = document.getElementById('circle')
+let circle = document.getElementById("circle");
 
-function distanciaEntre() {
-    const diferenca =  Math.sqrt((circle.style.left - event.clientX) ** 2 + (circle.style.top - event.clientY) ** 2)
-    console.log(`Diferença entre raio e mouse: ${diferenca}`)   
+circle.style.left = "300px";
+circle.style.top = "300px";
 
+function distanciaEntre(xB, xA, yB, yA) {
+    const diferenca = Math.sqrt((xB - xA) ** 2 + (yB - yA) ** 2);
+
+    return diferenca;
 }
 
 window.addEventListener("click", (event) => {
-    let circle = document.getElementById('circle')
+    const clientX = event.clientX;
+    const clientY = event.clientY;
 
-    circle.style.top = 0
-    circle.style.left = 0
+    const resultadoDaDiferenca = distanciaEntre(
+        clientX,
+        Number(circle.style.left.split("px")[0]),
+        clientY,
+        Number(circle.style.top.split("px")[0])
+    );
 
-    const {clientX, clientY} = event;
+    const raio = circle.style.height / 2;
 
-    console.log("Isso é o que vem desse random: ", Math.random(0) * window.innerHeight + 'px');
-
-    circle.style.top = Math.random(0) * window.innerHeight - '75' + 'px'
-    circle.style.left = Math.random(0) * window.innerWidth - '75' + 'px'
-    distanciaEntre()
+    if (resultadoDaDiferenca < raio) {
+        console.log("DIFF", resultadoDaDiferenca, " RAIO: ", raio);
+        circle.style.top = Math.random(0) * window.innerHeight - "75" + "px";
+        circle.style.left = Math.random(0) * window.innerWidth - "75" + "px";
+    }
 });
-
-
