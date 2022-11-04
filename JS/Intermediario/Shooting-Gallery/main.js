@@ -1,7 +1,13 @@
 let circle = document.getElementById("circle");
 
-circle.style.left = "300px";
-circle.style.top = "300px";
+circle.style.left = "100px";
+circle.style.top = "100px";
+circle.style.height = "74px"
+circle.style.width = "74px"
+circle.style.position = 'absolute'
+circle.style.border = '1px solid black'
+circle.style.backgroundColor = "gold"
+
 
 function distanciaEntre(xB, xA, yB, yA) {
     const diferenca = Math.sqrt((xB - xA) ** 2 + (yB - yA) ** 2);
@@ -20,11 +26,11 @@ window.addEventListener("click", (event) => {
         Number(circle.style.top.split("px")[0])
     );
 
-    const raio = circle.style.height / 2;
+    const raio = (Number(circle.style.height.split("px")[0] / 2))
 
-    if (resultadoDaDiferenca < raio) {
+    if (resultadoDaDiferenca) {
         console.log("DIFF", resultadoDaDiferenca, " RAIO: ", raio);
         circle.style.top = Math.random(0) * window.innerHeight - "75" + "px";
         circle.style.left = Math.random(0) * window.innerWidth - "75" + "px";
-    }
-});
+    } else console.log("Eat shit and die you are a pathetic human being")
+}); 
