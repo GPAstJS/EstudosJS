@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1st Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>WebSiteName</h1>
+        <div class="buttons-div">
+          <button class="button-tag">Home</button>
+          <button class="button-tag">Settings</button>
+          <button class="button-tag">Profile</button>
+          <button class="button-tag">Help</button>
+        </div>
+      </header>
+      <div class="form-svg-div">
+        <div class="form-box">
+          <form action="">
+            <h1 style="color: #2C517A; font-size: 25pt;">Fill the form below</h1>
+            <p style="color: #6B6860;">Complete the below form to get instant access</p>
+            <div class="input-img-div">
+              <img src="assets/building.svg" alt="Building" />
+              <input
+                id="company-input"
+                type="text"
+                class="input-tag"
+                placeholder="Company name"
+              />
+            </div>
+            <div class="input-img-div">
+              <img src="assets/person.svg" alt="" />
+              <input type="text" class="input-tag" placeholder="Full name" />
+            </div>
+            <div class="input-img-div">
+              <img src="assets/envelope.svg" alt="" />
+              <input type="text" class="input-tag" placeholder="Email" />
+            </div>
+            <div class="input-img-div">
+              <img src="assets/telephone.svg" alt="" />
+              <input type="text" class="input-tag" placeholder="Phone" />
+            </div>
+            <div class="input-img-div">
+              <img
+                style="width: 22px"
+                src="assets/truck.svg"
+                sizes="5px"
+                alt=""
+              />
+              <select
+                style="color: black"
+                disabled
+                name=""
+                id=""
+                class="input-tag"
+              >
+                <option hidden value="1">Choose service...</option>
+              </select>
+            </div>
+            <button id="form-button">Send request</button>
+          </form>
+        </div>
+        <div class="img-truck">
+          <img src="assets/free-delivery.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

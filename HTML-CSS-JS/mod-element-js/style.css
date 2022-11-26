@@ -1,0 +1,31 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#square {
+    height: 150px;
+    width: 150px;
+    background: black;
+    margin: 50px;
+    transition: 1s;
+}
+
+input {
+    height: 25px;
+    width: 225px;
+    margin: 5px;
+    font-size: 10.5pt;
+}
+
+#submit {
+    margin: 10px;
+}
+

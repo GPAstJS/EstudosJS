@@ -19,7 +19,7 @@ window.addEventListener("click", (event) => {
     const clientX = event.clientX;
     const clientY = event.clientY;
 
-    const resultadoDaDiferenca = distanciaEntre(
+        const resultadoDaDiferenca = distanciaEntre(
         clientX,
         Number(circle.style.left.split("px")[0]),
         clientY,
@@ -28,9 +28,14 @@ window.addEventListener("click", (event) => {
 
     const raio = (Number(circle.style.height.split("px")[0] / 2))
 
-    if (resultadoDaDiferenca) {
+    if (raio < resultadoDaDiferenca     ) {
+        console.log("Errou!")
+    } else {
         console.log("DIFF", resultadoDaDiferenca, " RAIO: ", raio);
-        circle.style.top = Math.random(0) * window.innerHeight - "75" + "px";
-        circle.style.left = Math.random(0) * window.innerWidth - "75" + "px";
-    } else console.log("Eat shit and die you are a pathetic human being")
+        circle.style.top = Math.random(0) * window.innerHeight
+        circle.style.left = Math.random(0) * window.innerWidth
+        circle.style.right = Math.random(0) * window.innerHeight
+        circle.style.bottom = Math.random(0) * window.innerHeight
+    }
 }); 
+

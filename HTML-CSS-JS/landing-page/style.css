@@ -1,0 +1,128 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to right,  #95CBFB, #56b3ff);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+    margin-left: -40px;
+  padding-left: 100px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons-div {
+  padding-right: 100px;
+  display: 0;
+  align-items: right;
+}
+
+.form-box {
+  margin: 10px;
+}
+
+.form-svg-div {
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+form {
+  border-radius: 2px;
+  background-color: #fff;
+  width: 600px;
+  padding: 30px;
+  margin: 50px;
+}
+
+.input-img-div {
+  padding-left: 3px;
+  display: flex;
+  flex-direction: row;
+  background-color: #f8f8f8;
+  border: 1px solid gray;
+  width: 95%;
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.img-truck {
+    width: 450px;
+    display: flex;
+    justify-content: end;
+    padding-left: 500px;
+    align-items: center ;
+}
+
+.input-tag {
+  width: 95%;
+  margin-left: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+#form-button {
+  background-color: #2a99f6;
+  border: none;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  font-size: 12pt;
+  border-radius: 30px;
+}
+
+.img-truck {
+  margin-right: 200px
+}
+
+.img-truck > :nth-child(1) {
+    width: 800px;
+    height: 800px;
+}
+
+.input-tag:focus {
+  outline: none;
+}
+
+.input-tag:active {
+  outline: none;
+}
+
+.input-tag:hover {
+  outline: none;
+}
+
+.input-img-div > :nth-child(1) {
+  width: 22px;
+  opacity: 0.5;
+  padding-left: 2px;
+}
+
+.button-tag {
+  text-decoration: underline;
+  margin: 10px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+}
+
+header > :nth-child(1) {
+    margin-left: 100px;
+}
