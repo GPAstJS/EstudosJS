@@ -1,0 +1,44 @@
+body {
+    background: red;
+    height: 100vh;
+    transition: 0.5s
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#display-color {
+    display: flex;
+    flex-direction: row;
+    font-size: 20pt ;
+    background-color: #222222;
+    color: #fff;
+    border-radius: 10px;
+    height: 75px;
+    width: 500px;
+    margin: 30px;
+}
+
+#btn {
+    height: 50px;
+    color: #fff;
+    width: 150px;
+    border:  2px solid #fff;
+    font-size: 15pt;
+    background: #222222;
+    border-radius: 10px;
+}
+
+#paragrafo {
+    margin-left: 20px;
+}
+
+#cor {
+    margin-left: 20px;
+}
