@@ -8,7 +8,7 @@ function random(a) {
 
 btn.addEventListener('click', (e) => {
 
-    var rndCol = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+    let rndCol = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
     document.body.style.background = rndCol.toString()
     cor.innerHTML = '' + '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
     cor.style.color = document.body.style.background

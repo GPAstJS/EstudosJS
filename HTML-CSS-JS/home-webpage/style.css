@@ -1,0 +1,142 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  height: 100vh;
+}
+
+.title {
+  margin-left: 50px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  width: 100vw;
+  background-color: #011425;
+}
+
+.header-btn-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 50px;
+}
+
+.header-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.nav-bar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar-btn {
+  background: transparent;
+  font-size: 20px;
+  color: black;
+}
+
+.nav-bar-action {
+  display: flex;
+  width: 850px;
+  justify-content: space-between;
+}
+
+.div-usuario {
+  margin-left: 30px;
+  align-items: center;
+  height: 100px;
+  display: flex;
+  border: none;
+  border-left: 1px solid white;
+}
+
+.user {
+  display: flex;
+  margin-left: 30px;
+}
+
+.header-botoes {
+  font-size: 20px;
+  height: 50px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.div-usuario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-phone-svg {
+  height: 30;
+  width: 30;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;   
+  padding-top: 30px;
+  background-image: linear-gradient(to right, #3CA4D4, #016193);
+  padding-bottom: 120px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#content-img {
+  width: 750px;
+  height: 520px;
+  border: 7px solid white;
+}
+
+#content-p {
+  width: 717px;
+  font-size: 23pt;
+}
+
+#content-title {
+  width: 700px;
+  font-size: 50pt;
+}
+
+.content-img-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+button:hover {
+    cursor: pointer;
+    border-color: red;
+    border-bottom: 4px solid red;
+    padding-top: 10px;
+
+}
