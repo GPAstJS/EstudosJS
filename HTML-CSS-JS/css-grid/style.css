@@ -1,0 +1,12 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: '1fr 1fr 1fr 1fr'777777777777777777777777
+    gap: 20px;
+}
