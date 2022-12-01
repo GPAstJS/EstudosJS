@@ -12,6 +12,7 @@
     --dark-blue: hsl(235, 46%, 20%);
     --desaturated-blue: hsl(235, 45%, 61%);
     --pale-blue: hsl(236, 100%, 87%);
+    --hover-effect: #242A65;
 }
 
 *{
@@ -19,6 +20,7 @@
     margin: 0;
     box-sizing: content-box;
     text-decoration: none;
+    text-align: left;
     border: none;
     font-weight: 700;
     font-family: 'Rubik', sans-serif;
@@ -121,12 +123,19 @@ body {
     height: 150px;
 }
 
+.container-title-content:hover {
+    background: var(--hover-effect);
+    transition: 0.5s;
+}
+
 .title-menu {
     margin-top: 20px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: row;
     margin-left: 25px;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 .content {
@@ -140,18 +149,36 @@ body {
 .h3-tag {
     color: #fff;
     font-size: 15px;
+    font-weight: 400;
     margin: 0;
 }
 
 .h2-tag {
     margin-bottom: 5px;
+    font-weight: 500;
     color: #fff;
-    font-size: 25px;
+    font-size: 32pt;
+    margin-bottom: 5px;
+}
+
+.h2tag {
+
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 32pt;
     margin-bottom: 5px;
 }
 
 .h4-tag {
     font-size: 12px;
+    font-weight: 300;
+    color: var(--pale-blue);
+}
+
+.h4tag {
+    font-size: 12px;
+    font-weight: 300;
     color: var(--pale-blue);
 }
 
@@ -187,14 +214,36 @@ body {
     height: 15px;
     border: none;
     background-color: transparent;
-    padding-top: 15px;
+    padding-top: 18px;
     margin-left: 15px;
 }
 
 .profile-btn:hover {
-    color: #fff
+    cursor: pointer;
+    color: #fff;
+    border: none;
 }
+
+.profile-btn:focus {
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+
+.profile-btn:active {
+    
+}
+
+
+.menu-btn {
+    padding-right: 25px;
+    color:  #fff;
+    background: none;
+    font-size: 18px;
+}
+
 
 #profile-name {
     width: 189px;
+    font-size: 30px;
 }
