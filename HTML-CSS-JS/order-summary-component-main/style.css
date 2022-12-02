@@ -1,0 +1,153 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    font-family: "Red Hot Display", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 450px;
+    border-radius: 15px;
+
+    box-shadow: 0px 3px 17px 0px var(--desaturated-blue);;
+}
+
+.content-container {
+    height: 375px;
+    background: white;
+}
+
+.content {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    width: 360px;
+    height: 240px;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.plan-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 12px;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-info-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+
+.actions-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#icon-img {
+    padding-right: 15px;
+}
+
+
+#pay-btn {
+    background: var(--bright-blue);
+    height: 50px;
+    border-radius: 10px;
+    color: var(--very-pale-blue);
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 35px;
+    box-shadow: 0px 3px 17px 0px var(--bright-blue);;
+}
+
+#cancel-btn {
+    font-weight: 700;
+    background: none;
+    border: none;
+    opacity: 0.5;
+}
+
+#change-btn {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: var(--dark-blue);
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+#h1-tag {
+    font-weight: 700px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+p {
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+#h2-tag {
+    font-size: 14.5px;
+    opacity: 0.7;
+}
+
+#card-img {
+    border-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}

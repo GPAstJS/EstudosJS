@@ -7,31 +7,54 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Red+Hat+Display&family=Roboto&family=Rubik&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  Order Summary
+  <div class="container">
+    <div class="card">
+      <div class="img-div">
+        <img id="card-img" src="images/illustration-hero.svg" alt="girl listening to music">
+      </div>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <div class="content-container">
+      <div class="content">
+        <h1 id="h1-tag">
+          Order Summary
+        </h1>
 
-  Annual Plan
-  $59.99/year
+        <p id="p-text">
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+        </p>
 
-  Change
+        <div class="plan-card">
+          <div class="img-info-card">
+          <div class="plan-img">
+            <img id="icon-img" src="images/icon-music.svg" alt="Icon Music">
+            <div class="info-text">
+            <h2 id="h2-tag">Annual Plan</h2>
+            <p>$59.99/year</p>
+          </div>
+          </div>
+</div>
 
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <div class="plan-change">
+            <button id="change-btn">Change</button>
+          </div>
+        </div>
+
+        <div class="actions-card">
+          <button id="pay-btn">Proceed to Payment</button>
+          <button id="cancel-btn">Cancel Order</button>
+        </div>
+      </div>
+    </div>
+</div>
+
   </div>
+
 </body>
 </html>
