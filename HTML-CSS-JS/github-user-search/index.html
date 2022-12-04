@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Devfinder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link'
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Red+Hat+Display&family=Roboto&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="app-card">
+        <div class="title-switchBtn-card">
+          <h1 id="h1-title-tag">devfinder</h1>
+          <div class="switch-theme-card">
+            <p id="theme-p-tag">LIGHT</p>
+            <img src="assets/brightness-high-fill.svg" alt="Sun Icon" id="theme-svg">
+          </div>
+        </div>
+
+        <div class="search-card">
+          <div class="search-div">
+            <img id="search-img" src="assets/search.svg" alt="Search Icon" />
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search GitHub username..."
+            />
+            <button id="search-btn">Search</button>
+          </div>
+        </div>
+
+        <div class="user-data-card">
+          <div class="user-img-div">
+            <img src="" alt="TBD" id="dev-avatar">
+          </div>
+
+          <div class="user-data-div">
+            <h1 id="dev-name" class="dev-name">The Octocat</h1>
+            <p id="dev-username">@octocat</p>
+
+            <p id="dev-bio">This profile has no bio</p>
+
+            <div class="dev-engagement">
+              <h2 class="h2-tag">Repos</h2>
+              <h2 class="h2-tag">Followers</h2>
+              <h2 class="h2-tag">Following</h2>
+
+              <p id="repos-value" class="p-tag">8</p>
+              <p id="followers-value" class="p-tag">3938</p>
+              <p id="following-value" class="p-tag">9</p>
+            </div>
+
+            <div class="dev-social">
+              <div class="dev-location">
+                <img
+                  src="assets/geo-alt-fill.svg"
+                  alt="Geo Icon"
+                  class="social-img"
+                />
+                <p id="dev-location" class="social-p">San Francisco</p>
+              </div>
+
+              <div class="dev-twitter">
+                <img
+                  src="assets/twitter.svg"
+                  alt="Twitter Icon"
+                  class="social-img"
+                />
+                <p id="dev-twitter" class="social-p">Not avaliable</p>
+              </div>
+
+              <div class="dev-link">
+                <img
+                  src="assets/link-45deg.svg"
+                  alt="Link Icon 45deg"
+                  class="social-img"
+                />
+                <p id="dev-link" class="social-p">https://github.blog</p>
+              </div>
+
+              <div class="dev-company">
+                <img
+                  src="assets/buildings-fill.svg"
+                  alt="Buildings Icon"
+                  class="social-img"
+                />
+                <p id="dev-job" class="social-p">GitHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
