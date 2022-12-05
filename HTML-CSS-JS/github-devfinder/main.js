@@ -3,6 +3,8 @@ const appCard = document.getElementById('app-card')
 const searchCard = document.getElementById('search-card')
 const modal = document.getElementById("error-modal-div")
 
+const errorText = document.getElementById("error-text")
+
 const searchInput = document.getElementById('search-input');
 const searchBtn = document.getElementById('search-btn')
 const devAvatar = document.getElementById('dev-avatar');
@@ -20,11 +22,21 @@ const devBlog = document.getElementById('dev-link');
 const devJob = document.getElementById('dev-job');
 
 async function api() {
-    const response = await fetch('https://api.github.com/users/'+searchInput.value)
+    const response = await fetch('https://api.github.com/users/'+searchInput.value.replace(/\s+/g, ''))
     console.log("reponse: ",response)
     const data = await response.json()
 
     console.log(data);
+
+    if(response.url == 'https://api.github.com/users/' ) {
+        errorText.innerHTML = "Search for a user!"
+        errorText.style.fontSize = "22px"
+    } else {
+        errorText.innerHTML = "This user doesn't exist!"
+        errorText.style.fontSize = "16px"
+        errorText.style.transition = "0.25s"
+    }
+
 
     if(response.status == 404) {
         modal.style.visibility = "visible"
@@ -55,14 +67,17 @@ async function api() {
     devRepos.innerHTML = data.public_repos || 0
     devFollowers.innerHTML = data.followers || 0
     devFollowing.innerHTML = data.following || 0
-    devLocation.innerHTML = data.location || "To be determined"
+    devLocation.innerHTML = data.location.slice(0,9) + "..." || "To be determined"
     devTwitter.innerHTML = data.twitter || "To be determined"
     devJob.innerHTML = data.company || 'To be determined'
     devBlog.innerHTML = data.blog.slice(0,17) || "To be determined"
+
 }
 
 searchBtn.addEventListener('click', (e) => {
-
     api()
+    
+    searchInput.value = ''
 })
+
 

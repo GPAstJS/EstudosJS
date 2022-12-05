@@ -12,4 +12,5 @@ function showModal() {
 function hideModal() {
     modal.style.display = 'none'
     document.body.style.backgroundColor = '#fff'
+    
 }
