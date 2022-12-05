@@ -7,7 +7,10 @@
 
 * {
     font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    overflow: hidden;
+    white-space: nowrap; /* Don't forget this one */
+        text-overflow: ellipsis;
 }
 
 body {
@@ -63,6 +66,7 @@ body {
     background: var(--app-background);
     height: 75px;
     border-radius: 15px;
+    margin-bottom: -50px;
 }
 
 .search-div {
@@ -72,24 +76,58 @@ body {
     justify-content: space-between;
 }
 
+#error-modal-div {
+    visibility: hidden;
+    background: #E51C24;
+    border-radius: 15px;
+    width: 300px;
+    margin-left: 150px;
+
+}
+.error-modal {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 10px;
+    width: 100%;
+}
+
+#error-svg {
+    padding-right: 10px;
+    height: 22px;
+    width: 22px;
+    padding-bottom: 2px;
+    float: center;
+}
+
+#error-text {
+    font-weight: 500;
+}
+
+#error-svg2 {
+    width: 25px;
+    height: 25px;
+    padding-top: 4px;
+    padding-left: 25px;
+}
+
 .user-data-card {
     padding-top: 35px;
     display: flex;
     margin-top: 25px;
     background: var(--app-background);
     border-radius: 15px;
-    height: 360px;
+    height: 320px;
 }
 
 .user-img-div {
-    width: 210px;
+  width: 210px;
 }
 
 .user-data-div {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-right: 3p;
 }
 
 .dev-engagement {
@@ -105,6 +143,7 @@ body {
 .dev-social {
     display: grid;
     grid-template-areas: '1fr 1fr';
+    margin-right: 30px;
 }
 
 .dev-location {
@@ -140,8 +179,9 @@ body {
 }
 
 .social-p {
-    color: gray;
+    color: #fff;
     font-size: 14px;
+    font-weight: 300;
 }
 
 #search-input {
@@ -192,14 +232,37 @@ body {
     background: none;
     height: 100px;
     width: 100px;
-    border: 3px solid black;
+    border: 3px solid #ffff;
+    border-radius: 100px;
     border-radius: 50px;
     margin-left: 20px;  
+}
+
+#dev-bio {
+    color: #fff;
+    font-weight: 300;
+    width: 400px;
 }
 
 .dev-name {
     color: white;
     margin: 0;
+    font-weight: 700;
+}
+
+
+.dev-twitter {
+    margin-right: 30px;
+}
+
+.dev-link {
+    margin-bottom: 30px;
+
+}
+
+.dev-company {
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 #dev-username {
@@ -222,4 +285,6 @@ body {
     font-size: 30px;
 }
 
- 
+p {
+    color: #fff;
+}

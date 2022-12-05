@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="app-card">
+      <div id="app-card" class="app-card">
         <div class="title-switchBtn-card">
           <h1 id="h1-title-tag">devfinder</h1>
           <div class="switch-theme-card">
@@ -24,7 +24,7 @@
           </div>
         </div>
 
-        <div class="search-card">
+        <div id="search-card" class="search-card">
           <div class="search-div">
             <img id="search-img" src="assets/search.svg" alt="Search Icon" />
             <input
@@ -36,7 +36,15 @@
           </div>
         </div>
 
-        <div class="user-data-card">
+        <div id="error-modal-div">
+            <div class="error-modal">
+              <img src="assets/x-circle-fill.svg" alt="X Circle  SVG" id="error-svg">
+              <p id="error-text">This user doesn't exist!</p>
+              <img id="error-svg2" src="assets/x.svg" alt="X Circle SVG" >
+            </div>
+        </div>
+
+        <div id="data-card" class="user-data-card">
           <div class="user-img-div">
             <img src="" alt="TBD" id="dev-avatar">
           </div>
