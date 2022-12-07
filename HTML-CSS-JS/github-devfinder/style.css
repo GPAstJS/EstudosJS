@@ -112,6 +112,7 @@ body {
 }
 
 .user-data-card {
+    visibility: hidden;
     padding-top: 35px;
     display: flex;
     margin-top: 25px;

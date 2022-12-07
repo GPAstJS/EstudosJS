@@ -28,23 +28,15 @@ async function api() {
 
     console.log(data);
 
-    if(response.url == 'https://api.github.com/users/' ) {
-        errorText.innerHTML = "Search for a user!"
-        errorText.style.fontSize = "22px"
-    } else {
-        errorText.innerHTML = "This user doesn't exist!"
-        errorText.style.fontSize = "16px"
-        errorText.style.transition = "0.25s"
-    }
-
-
     if(response.status == 404) {
+        data_card.style.visibility = "hidden    "
         modal.style.visibility = "visible"
         modal.style.marginTop = "0px"
         modal.style.transition = "0.25s"
         searchCard.style.marginBottom = "25px"
         searchCard.style.transition = "0.25s"
     } else {
+        data_card.style.visibility = "visible"
         modal.style.visibility = "hidden";
         searchCard.style.marginBottom = "-50px"
         searchCard.style.transition = "0.25s"
