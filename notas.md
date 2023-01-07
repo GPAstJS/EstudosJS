@@ -16,6 +16,3 @@
  · git commit -m ( escreve um comentario para ser identificado e entao feito o push ) **obrigatorio!
 
  · outros recursos sermma implementados depois, por enquanto.... o que eu passe vai ser o suficiente ;)
-
-
--- Isso é um teste!
