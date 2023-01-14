@@ -1,0 +1,95 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    align-items: flex-start;
+}
+
+.calculadora-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 500px;
+    width: 350px;
+    background: lightgray
+}
+
+.botoes-card {
+    display: grid;
+    grid-template-areas: '1fr 1fr 1fr 1fr';
+    gap: 15px;
+}
+
+
+#visor {
+    height: 74px;
+    width: 289px;
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 25pt;
+    color: black;
+
+}
+
+.botoes {
+    height: 60px;
+    width: 60px;
+    font-size: 20pt;
+    background: white;
+    border: none;
+}
+
+.botoes:hover {
+    cursor: pointer;
+    background: darkblue;
+    transition: 0.25s;
+}
+
+#clean {
+    height: 60px;
+    width: 60px;
+    font-size: 20pt;
+    background: white;
+    border: none;
+}
+
+#clean:hover {
+    cursor: pointer;
+    background: darkblue;
+    transition: 0.25s;
+}
+
+#equals {
+    height: 60px;
+    width: 60px;
+    font-size: 20pt;
+    background: white;
+    border: none;
+}
+
+#equals:hover {
+    cursor: pointer;
+    background: darkblue;
+    transition: 0.25s;
+}
+
+#historico {
+    /* position: absolute; */
+    margin-left: 15px;
+    font-size: 30pt;
+    /* right: 650px; */
+    /* top: 85px; */
+}

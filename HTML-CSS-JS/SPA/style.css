@@ -1,0 +1,97 @@
+* {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  height: 100vh
+}
+
+.header-card {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 75px;
+}
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.actions-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-actions {
+  font-size: 15pt;
+  margin: 25px;
+  font-weight: 500;
+  color: #000;
+}
+
+.main-card {
+  padding: 25px;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  flex-direction: column;
+}
+
+.cleats-card {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: space-evenly 
+}
+
+.cleats-text-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-card {
+  width: 100%;
+  text-align: center;
+}   
+
+.title {
+  padding: 25px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.cleats-text {
+  color: #fff;
+  font-size: 25px;
+  width: 600px;
+  text-align: justify;
+}
+
+.buy-btn {
+    margin-top: 15px;
+    color: black;
+    background: white;
+    font-weight: 700;
+    font-size: 30px;
+    height: 70px;
+    border-radius: 30px;
+}
+
+.buy-btn:hover {
+    cursor: pointer;
+}
