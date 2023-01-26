@@ -27,7 +27,7 @@ function calcular() {
     try {
       visor.value = eval(visor.value);
       historico.innerHTML = historico.innerHTML + visor.value + "<br>";
-      
+        
     } catch (error) {
       alert("Insira uma operação matemática que faça sentido!");
       visor.value = "";

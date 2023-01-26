@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Quiz Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz">
+        <div class="quiz--visor">
+          <div class="quiz--visor--ActualQuestion">
+            <p id="quiz--visor--text">Question 1/</p>
+            <div id="quiz--visor--barLoader">teste</div>
+          </div>
+          <div class="quiz--visor--score">
+            <p id="quiz--visor--score--text">Score</p>
+            <p id="quiz--visor--score--number">0</p>
+          </div>
+        </div>
+
+        <div class="quiz--question">
+          <h2 id="quiz--question--text">
+            In web design, what does CSS stand for?
+          </h2>
+        </div>
+
+        <div class="quiz--question--card">
+          <div class="quiz--question--alternative">
+            <div class="quiz--question--letters">
+              <p class="quiz--question--letter">A</p>
+            </div>
+
+            <div onclick="verifyAnswer(this)" class="quiz--question--answer">
+              <p 
+                class="quiz--question--answerClass"
+                id="quiz--question--answerA"
+              >
+                Counter Strike: Source
+              </p>
+            </div>
+          </div>
+
+          <div class="quiz--question--alternative">
+            <div class="quiz--question--letters">
+              <p class="quiz--question--letter">B</p>
+            </div>
+
+            <div onclick="verifyAnswer(this)" class="quiz--question--answer">
+              <p
+                class="quiz--question--answerClass"
+                id="quiz--question--answerB"
+              >
+                Corrective Style Sheet
+              </p>
+            </div>
+          </div>
+
+          <div class="quiz--question--alternative">
+            <div class="quiz--question--letters">
+              <p class="quiz--question--letter">C</p>
+            </div>
+
+            <div class="quiz--question--answer"
+            onclick="verifyAnswer(this)">
+                <p
+                  class="quiz--question--answerClass"
+                  id="quiz--question--answerC"
+                >
+                  Cascading Style Sheet
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="quiz--action">
+          <p onclick="nextQuestion()" class="quiz--action--text">Next</p>
+          <img
+            src="assets/images/arrow-right.svg"
+            alt="Arrow Right SVG"
+            class="quiz--action--img"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
