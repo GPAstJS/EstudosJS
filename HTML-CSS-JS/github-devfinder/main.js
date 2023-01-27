@@ -29,7 +29,7 @@ async function api() {
     console.log(data);
 
     if(response.status == 404) {
-        data_card.style.visibility = "hidden    "
+        data_card.style.visibility = "hidden"
         modal.style.visibility = "visible"
         modal.style.marginTop = "0px"
         modal.style.transition = "0.25s"

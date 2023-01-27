@@ -1,14 +1,19 @@
-const questaoAtual = document.getElementById("quiz--visor--text");
+const currentQuestion = document.getElementById("quiz--visor--text");
+const bar = document.getElementsByClassName('quiz--visor--barLoader--part')
 const score = document.getElementById("quiz--visor--score--number");
-const enunciado = document.getElementById("quiz--question--text");
-const respostas = document.getElementsByClassName("quiz--question--answer");
+const questionStatemento = document.getElementById("quiz--question--text");
+const answers = Array.from(document.getElementsByClassName("quiz--question--answer"));
 const nextBtn = document.getElementById("quiz--action--text");
+const showResults = document.getElementById('hidden')
 
+const quizDiv = document.getElementById("quiz");
 
+const finalScore = document.getElementById('quiz--score')
+const message = document.getElementById('quiz--message')
 
-let counter = 0;
+const restartGame = document.getElementById('quiz--results--restart')
 
-const respostasCorretas = [
+const answersCorretas = [
   "Cascading Style Sheet",
   "Hyper Text Markup Language",
   "World Wide Web's Creator",
@@ -16,89 +21,94 @@ const respostasCorretas = [
 ];
 
 const questions = [
+  {},
   {
     titulo: "In web design, what does HTML stand for?",
-    alternativas: [
+    alternatives: [
       "Hyper Text Markup Language",
       "Hyper Transfer Markup Language",
       "Hiphen Transfer Markup Language",
     ],
   },
   {
-    titulo: "Who was Tim Berners-Lee",
-    alternativas: ["A Professor", "World Wide Web's Creator", "A Farmer"],
+    titulo: "Who was Tim Berners-Lee?",
+    alternatives: ["A Professor", "World Wide Web's Creator", "A Farmer"],
   },
   {
     titulo: "What does JSON stand for?",
-    alternativas: [
+    alternatives: [
       "Java's Son",
-      "JavaScript Object Notation",
       "A Globalist Conspiracy",
+      "JavaScript Object Notation",
     ],
   },
 ];
 
-let userClickedNext = false;
-let userAnswered = false;
-
-const newRespostas = [
+const newanswers = [
   "Hyper Text Markup Language",
   "Hyper Transfer Markup Language",
   "Hiphen Transfer Markup Language",
 ];
 
+let userAnswered = false;
+let counter = 0;
+let pontuation = 0;
+
 function verifyAnswer(answer) {
   if (userAnswered == false) {
     userAnswered = true;
-
-    for (i = 0; i < respostasCorretas.length; i++) {
-      if (answer.innerText == respostasCorretas[i]) {
-        answer.style.color = "#44ad34";
-        score.innerText = parseInt(score.innerText) + 1;
-        answer.style.border = "1px solid green";
-        break;
-      } else {
-        answer.style.border = "1px solid red";
-        answer.style.color = "darkred";
-      }
+    
+    if (answer.innerText === answersCorretas[counter]) {
+      pontuation++;
+      answer.style.border = "1px solid green";
+      answer.style.color = "darkgreen";
     }
-  }
+    else answers.filter((el) => {
+      answer.style.border = "1px solid red";
+      answer.style.color = "red";
+      
+      if (el.innerText === answersCorretas[counter]) {
+        el.style.border = "1px solid green";
+        el.style.color = "darkgreen";
+      }
+    });
+  } 
+
+  bar[counter + 1].style.transition = '0.25s'
+  bar[counter + 1].style.background = 'red';
+  bar[counter + 1].style.opacity = '0.6'
 }
 
-// function nextQuestion() {
-//   if (userAnswered == true) {
-//     userAnswered = false;
-
-//     enunciado.innerText = "In web design, what does HTML stand for?";
-//     questaoAtual.innerText = "Question 2/2";
-
-//     for (i = 0; i < newRespostas.length; i++) {
-//   respostas[i].style.color = "black";
-//   respostas[i].innerText = newRespostas[i];
-//   respostas[i].style.fontSize = "30pt";
-//   respostas[i].style.fontFamily = " 'Open Sans', sans-serif";
-//   respostas[i].style.border = "1px solid black";
-//     }
-//   }
-// }
+const endGame = () => {
+ quizDiv.style.visibility = 'collapse'
+ showResults.style.visibility = 'visible'
+}
 
 function nextQuestion() {
-  if (userAnswered == true) {
-    userAnswered = false;
-
+   //aqui o counter vai ser + 1 para quando chegar na ultima questão, ele pare e faça o endgame
+  if (userAnswered == true && counter + 1 < questions.length) {
     counter++;
-
-    for (i = 0; i < respostas.length; i++) {
-      respostas[i].style.color = "black";
-      respostas[i].style.fontSize = "30pt";
-      respostas[i].style.fontFamily = " 'Open Sans', sans-serif";
-      respostas[i].style.border = "1px solid black";
+    
+    for (i = 0; i < questions.length - 1; i++) {
+      answers[i].style.color = "black";
+      answers[i].style.fontSize = "30pt";
+      answers[i].style.fontFamily = " 'Open Sans', sans-serif";
+      answers[i].style.border = "1px solid black";
+      
+      if( counter < questions.length ) {
+        answers[i].innerText = questions[counter].alternatives[i]; // isso ta gerando erro 
+        questionStatemento.innerText = questions[counter].titulo;
+        currentQuestion.innerText = `Question ${counter + 1}/4`;
+      }
     }
-
-    for (i = 0; i < questions.length; i++) {
-      enunciado.innerText = questions[counter - 1].titulo;
-      questaoAtual.innerText = `Questão ${counter + 1}/4`;
-      respostas[i].innerText = questions[counter - 1].alternativas[i];
-    }
-  }  
+    score.innerText = pontuation;
+    finalScore.innerText = `Your Score: ${pontuation}`
+    
+    userAnswered = false;
+  }
+  else endGame() // <-----
 }
+
+
+//o botao de restart pode só carregar a pagina? kkkkkkkk
+// ou devo fazer o game reiniciar do 0??o

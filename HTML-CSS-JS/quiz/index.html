@@ -15,11 +15,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="quiz">
+      <div id="quiz" class="quiz">
         <div class="quiz--visor">
           <div class="quiz--visor--ActualQuestion">
-            <p id="quiz--visor--text">Question 1/</p>
-            <div id="quiz--visor--barLoader">teste</div>
+            <p id="quiz--visor--text">Question 1/4</p>
+            <div id="quiz--visor--barLoader" class="quiz--visor--barLoader--part">
+              <div class="quiz--visor--barLoader--part"></div>
+              <div class="quiz--visor--barLoader--part"></div>
+              <div class="quiz--visor--barLoader--part"></div>
+              <div class="quiz--visor--barLoader--part"></div>
+            </div>
           </div>
           <div class="quiz--visor--score">
             <p id="quiz--visor--score--text">Score</p>
@@ -89,7 +94,18 @@
           />
         </div>
       </div>
+       <!-- aqui gui, cria um id chamado hidden, usa ele para ocultar teu HTML e fazer logica do jogo ficar mais fácil quando finalizar e começar outro-->
+       <!-- compreendido chefe
+      vamos no javascript--> 
+      <div id="hidden">
+        <p id="quiz--score">Your Score</p>
+        <p id="quiz--message">If you don't reach the max score (4), You should study a little.</p>
+        <a id="quiz--results--restart" onclick="window.location.reload(true)">RESTART </a>
+      </div>
     </div>
+
+
+
   </body>
   <script src="main.js"></script>
 </html>
