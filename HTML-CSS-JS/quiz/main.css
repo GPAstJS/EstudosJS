@@ -96,7 +96,7 @@ body {
   border-radius: 15px;
 }
 .quiz .quiz--visor .quiz--visor--ActualQuestion #quiz--visor--barLoader .quiz--visor--barLoader--part:nth-child(1) {
-  width: 57.5px;
+  width: 57px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   border: none;

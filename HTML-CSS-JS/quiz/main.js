@@ -55,6 +55,10 @@ let counter = 0;
 let pontuation = 0;
 
 function verifyAnswer(answer) {
+
+  score.innerText = pontuation;
+  finalScore.innerText = `Your Score: ${pontuation}`
+
   if (userAnswered == false) {
     userAnswered = true;
     
@@ -77,6 +81,9 @@ function verifyAnswer(answer) {
   bar[counter + 1].style.transition = '0.25s'
   bar[counter + 1].style.background = 'red';
   bar[counter + 1].style.opacity = '0.6'
+
+  score.innerText = pontuation;
+  finalScore.innerText = `Your Score: ${pontuation}`
 }
 
 const endGame = () => {
