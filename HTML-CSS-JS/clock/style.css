@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ;
+}
+
+.clock-app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid #000; 
+    border-radius: 15px;
+    height: 250px;
+    width: 500px;
+    background: #A9B6B6;
+}
+
+.timeBox {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.time {
+    font-size: 90pt;
+}
+
+#dots {
+    font-size: 90pt;
+}
+
+#period {
+    font-size: 20pt;
+}
