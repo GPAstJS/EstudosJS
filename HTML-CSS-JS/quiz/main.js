@@ -23,7 +23,7 @@ const answersCorretas = [
 const questions = [
   {},
   {
-    titulo: "In web design, what does HTML stand for?",
+    title: "In web design, what does HTML stand for?",
     alternatives: [
       "Hyper Text Markup Language",
       "Hyper Transfer Markup Language",
@@ -31,11 +31,11 @@ const questions = [
     ],
   },
   {
-    titulo: "Who was Tim Berners-Lee?",
+    title: "Who was Tim Berners-Lee?",
     alternatives: ["A Professor", "World Wide Web's Creator", "A Farmer"],
   },
   {
-    titulo: "What does JSON stand for?",
+    title: "What does JSON stand for?",
     alternatives: [
       "Java's Son",
       "A Globalist Conspiracy",
@@ -44,7 +44,7 @@ const questions = [
   },
 ];
 
-const newanswers = [
+const newAnswers = [
   "Hyper Text Markup Language",
   "Hyper Transfer Markup Language",
   "Hiphen Transfer Markup Language",
@@ -104,7 +104,7 @@ function nextQuestion() {
       
       if( counter < questions.length ) {
         answers[i].innerText = questions[counter].alternatives[i]; // isso ta gerando erro 
-        questionStatemento.innerText = questions[counter].titulo;
+        questionStatemento.innerText = questions[counter].title;
         currentQuestion.innerText = `Question ${counter + 1}/4`;
       }
     }

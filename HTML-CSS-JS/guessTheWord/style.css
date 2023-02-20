@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    height: 60px;
+    width: 150px;
+}
+
+label {
+    font-size: 20pt;
+}
+
+button {
+    height: 60px;
+    width: 150px;
+    border: none;
+    background: lightgreen;
+    font-size: 15pt;
+}
+
+button:hover {
+    cursor: pointer;
+}
