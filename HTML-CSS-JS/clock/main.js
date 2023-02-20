@@ -25,3 +25,5 @@ const clock = setInterval(function time() {
   minutes.innerText = mm;
   seconds.innerText = ss;
 }, 1000);
+
+

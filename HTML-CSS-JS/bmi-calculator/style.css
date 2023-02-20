@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    background: #1C1C1C;
+    border: 1px solid black;
+    height: 350px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,.9);
+}
+
+.inputArea {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.title {
+    color: #fff;
+}
+
+.text {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#bmiText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    background: #fff;
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#calculateBtn {
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background: orange;
+    border: none;
+    border-radius: 5px
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+}
+
